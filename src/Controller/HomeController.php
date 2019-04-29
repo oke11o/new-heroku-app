@@ -13,7 +13,8 @@ class HomeController extends AbstractController
      */
     public function index(LoggerInterface $logger)
     {
-        $logger->info("Start page");
+        $logger->info("MY INFO Start PAGE");
+        $logger->error("MY ERRORStart page");
         return $this->render('home/index.html.twig', [
             'title' => 'Hello new Heroku app',
         ]);
